@@ -8,10 +8,10 @@ contextMenus.Accessibility = chrome.contextMenus.create(
   { "title": "Accessibility", "type": "normal", contexts: ["all"], "parentId": contextMenus.WebPage });
 contextMenus.AccessibilityAltReplace = chrome.contextMenus.create(
   { "title": "Remove Images Without Alt Tags", "type": "normal", contexts: ["all"], "parentId": contextMenus.Accessibility });
-contextMenus.AccessibilityPageFlow = chrome.contextMenus.create(
-  { "title": "Visualise Tab Flow", "type": "normal", contexts: ["all"], "parentId": contextMenus.Accessibility });
 contextMenus.AccessibilityRemoveInputsNoLabel = chrome.contextMenus.create(
   { "title": "Remove Inputs Without Labels", "type": "normal", contexts: ["all"], "parentId": contextMenus.Accessibility });
+  contextMenus.AccessibilityPageFlow = chrome.contextMenus.create(
+    { "title": "Visualise Tab Flow", "type": "normal", contexts: ["all"], "parentId": contextMenus.Accessibility });
 
 contextMenus.Validation = chrome.contextMenus.create(
   { "title": "Validation", "type": "normal", contexts: ["all"], "parentId": contextMenus.WebPage });
