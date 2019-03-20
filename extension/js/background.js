@@ -17,6 +17,8 @@ contextMenus.WebPage = chrome.contextMenus.create(
     { "title": "Remove Max Length Attributes", "type": "normal", contexts: ["all"], "parentId": contextMenus.Validation });
   contextMenus.ValidationRemoveRequired = chrome.contextMenus.create(
     { "title": "Remove Required Field Attributes", "type": "normal", contexts: ["all"], "parentId": contextMenus.Validation });
+  contextMenus.ValidationRemovePasteRestriction = chrome.contextMenus.create(
+    { "title": "Remove Paste Restrictions", "type": "normal", contexts: ["all"], "parentId": contextMenus.Validation });
 
 chrome.contextMenus.onClicked.addListener(contextMenuClickHandler);
 
@@ -28,6 +30,7 @@ function contextMenuClickHandler(info, tab){
     { id: contextMenus.AccessibilityPageFlow, file: "js/web/accessibility/visualiseTabFlow.js", instant: false },
     { id: contextMenus.ValidationRemoveMaxLength, file: "js/web/validation/removeMaxLength.js", instant: false },
     { id: contextMenus.ValidationRemoveRequired, file: "js/web/validation/removeRequired.js", instant: false },
+    { id: contextMenus.ValidationRemovePasteRestriction, file: "js/web/validation/removePasteRestrictions.js", instant: false },
       ];
 
     var actionToDo;
