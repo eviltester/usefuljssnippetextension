@@ -10,5 +10,6 @@ And are also small enough that the provide useful examples of using JavaScript f
 
 Initially:
 
-Alan Richardson created the basic framework for the Chrome Extension.
-Viv Richards contributed the initial JavaScript snippets.
+- 20190320
+    - Alan Richardson created the basic framework for the Chrome Extension.
+    - Viv Richards contributed the initial JavaScript snippets.
