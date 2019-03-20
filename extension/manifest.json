@@ -1,0 +1,19 @@
+{
+  "name": "Useful JS Snippets Extension",
+  "version": "0.1",
+  "description": "A variety of JavaScript snippets to support Software Testing and learn some JavaScript",
+  "background": {
+    "persistent": true,
+    "scripts": [
+                "js/background.js"
+              ]              
+  },
+  "web_accessible_resources": [
+    "js/*"
+  ],
+  "permissions": [
+    "contextMenus",
+    "activeTab"
+    ],
+  "manifest_version": 2
+}
