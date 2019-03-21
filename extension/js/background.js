@@ -1,40 +1,45 @@
 
 var contextMenus = {};
 
-contextMenus.WebPage = chrome.contextMenus.create(
-  { "title": "Web Page", "type": "normal", contexts: ["all"] });
+// *
+  // * configure menus here to avoid writing menu creation code, have something parse array to create menus
+  // *
+  var menuActions = [
+    // parent menu items need to have a unique menuref, which is used by other items as the 'menu:' property
+    // currently parents need to be defined first in the array
+    { menu: "", "title": "Web Page", menuref: "W", file: ""},
+      { menu: "W", "title": "Accessibility", menuref: "W>A", file: ""},    
+        { menu: "W>A", "title": "Remove Images Without Alt Tags", file: "js/web/accessibility/removeImagesWithoutAltTags.js", instant: false },
+        { menu: "W>A", "title": "Visualise Tab Flow", file: "js/web/accessibility/visualiseTabFlow.js", instant: false },
+        { menu: "W>A", "title": "Remove Inputs Without Labels", file: "js/web/accessibility/removeInputsWithoutLabel.js", instant: false },
+      { menu: "W", "title": "Validation", menuref: "W>V", file: ""},
+        { menu: "W>V", "title": "Remove Max Length Attributes", file: "js/web/validation/removeMaxLength.js", instant: false },
+        { menu: "W>V", "title": "Remove Required Field Attributes", file: "js/web/validation/removeRequired.js", instant: false },
+        { menu: "W>V", "title": "Remove Paste Restrictions", file: "js/web/validation/removePasteRestrictions.js", instant: false },
+  ];
 
-contextMenus.Accessibility = chrome.contextMenus.create(
-  { "title": "Accessibility", "type": "normal", contexts: ["all"], "parentId": contextMenus.WebPage });
-contextMenus.AccessibilityAltReplace = chrome.contextMenus.create(
-  { "title": "Remove Images Without Alt Tags", "type": "normal", contexts: ["all"], "parentId": contextMenus.Accessibility });
-contextMenus.AccessibilityRemoveInputsNoLabel = chrome.contextMenus.create(
-  { "title": "Remove Inputs Without Labels", "type": "normal", contexts: ["all"], "parentId": contextMenus.Accessibility });
-  contextMenus.AccessibilityPageFlow = chrome.contextMenus.create(
-    { "title": "Visualise Tab Flow", "type": "normal", contexts: ["all"], "parentId": contextMenus.Accessibility });
+  function findMenuRefItem(theMenuArray, theMenuRef){
+    for (var menuindex = 0; menuindex < theMenuArray.length; menuindex++) {
+      if(theMenuArray[menuindex].menuref === theMenuRef){
+        return theMenuArray[menuindex].id;
+      }
+    }
+  }
 
-contextMenus.Validation = chrome.contextMenus.create(
-  { "title": "Validation", "type": "normal", contexts: ["all"], "parentId": contextMenus.WebPage });
-contextMenus.ValidationRemoveMaxLength = chrome.contextMenus.create(
-  { "title": "Remove Max Length Attributes", "type": "normal", contexts: ["all"], "parentId": contextMenus.Validation });
-contextMenus.ValidationRemoveRequired = chrome.contextMenus.create(
-  { "title": "Remove Required Field Attributes", "type": "normal", contexts: ["all"], "parentId": contextMenus.Validation });
-contextMenus.ValidationRemovePasteRestriction = chrome.contextMenus.create(
-  { "title": "Remove Paste Restrictions", "type": "normal", contexts: ["all"], "parentId": contextMenus.Validation });
+  for (var actionindex = 0; actionindex < menuActions.length; actionindex++) {
+    if(menuActions[actionindex].menu===""){
+      // it is a root level menu, add it to the contextMenus
+      menuActions[actionindex].id = chrome.contextMenus.create({ "title": menuActions[actionindex].title, "type": "normal", contexts: ["all"] });
+    }else{
+      // it is a child menu, find the parent and add it
+      var parentId = findMenuRefItem(menuActions, menuActions[actionindex].menu);
+      menuActions[actionindex].id = chrome.contextMenus.create({ "title": menuActions[actionindex].title, "type": "normal", contexts: ["all"], "parentId": parentId });
+    }
+  }
 
-chrome.contextMenus.onClicked.addListener(contextMenuClickHandler);
+  chrome.contextMenus.onClicked.addListener(contextMenuClickHandler);
 
 function contextMenuClickHandler(info, tab) {
-
-  // TODO: configure everything in here to avoid creating menus above, have something parse array to create menus
-  var menuActions = [
-    { id: contextMenus.AccessibilityAltReplace, file: "js/web/accessibility/removeImagesWithoutAltTags.js", instant: false },
-    { id: contextMenus.AccessibilityPageFlow, file: "js/web/accessibility/visualiseTabFlow.js", instant: false },
-    { id: contextMenus.AccessibilityRemoveInputsNoLabel, file: "js/web/accessibility/removeInputsWithoutLabel.js", instant: false },
-    { id: contextMenus.ValidationRemoveMaxLength, file: "js/web/validation/removeMaxLength.js", instant: false },
-    { id: contextMenus.ValidationRemoveRequired, file: "js/web/validation/removeRequired.js", instant: false },
-    { id: contextMenus.ValidationRemovePasteRestriction, file: "js/web/validation/removePasteRestrictions.js", instant: false },
-  ];
 
   var actionToDo;
 
