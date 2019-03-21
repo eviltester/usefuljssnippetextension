@@ -27,7 +27,7 @@ See commit history for the authorship of the onging snippets.
 - [Viv Richards](https://github.com/vivrichards600) contributed the first JavaScript snippets to this extension: visualise tab flow, remove inputs, remove images, remove max length, remove required.
     - [vivrichards.co.uk](http://vivrichards.co.uk/)
     - [@11vlr](https://twitter.com/11vlr)
-    - [linkedin.com/in/vivrichards/](https://www.linkedin.com/in/vivrichards/)
+    - [linkedin.com/in/vivrichards](https://www.linkedin.com/in/vivrichards)
 
 
 ## TODO
