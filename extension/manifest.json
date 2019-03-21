@@ -5,6 +5,7 @@
   "background": {
     "persistent": true,
     "scripts": [
+                "js/menu.js",
                 "js/background.js"
               ]              
   },

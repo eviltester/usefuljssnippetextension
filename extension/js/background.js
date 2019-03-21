@@ -1,22 +1,9 @@
+//
+// Setup the context menu
+//
+  var contextMenus = {};
 
-var contextMenus = {};
-
-// *
-  // * configure menus here to avoid writing menu creation code, have something parse array to create menus
-  // *
-  var menuActions = [
-    // parent menu items need to have a unique menuref, which is used by other items as the 'menu:' property
-    // currently parents need to be defined first in the array
-    { menu: "", "title": "Web Page", menuref: "W", file: ""},
-      { menu: "W", "title": "Accessibility", menuref: "W>A", file: ""},    
-        { menu: "W>A", "title": "Remove Images Without Alt Tags", file: "js/web/accessibility/removeImagesWithoutAltTags.js", instant: false },
-        { menu: "W>A", "title": "Visualise Tab Flow", file: "js/web/accessibility/visualiseTabFlow.js", instant: false },
-        { menu: "W>A", "title": "Remove Inputs Without Labels", file: "js/web/accessibility/removeInputsWithoutLabel.js", instant: false },
-      { menu: "W", "title": "Validation", menuref: "W>V", file: ""},
-        { menu: "W>V", "title": "Remove Max Length Attributes", file: "js/web/validation/removeMaxLength.js", instant: false },
-        { menu: "W>V", "title": "Remove Required Field Attributes", file: "js/web/validation/removeRequired.js", instant: false },
-        { menu: "W>V", "title": "Remove Paste Restrictions", file: "js/web/validation/removePasteRestrictions.js", instant: false },
-  ];
+  // the menuActions are defined in menu.js
 
   function findMenuRefItem(theMenuArray, theMenuRef){
     for (var menuindex = 0; menuindex < theMenuArray.length; menuindex++) {
@@ -39,15 +26,30 @@ var contextMenus = {};
 
   chrome.contextMenus.onClicked.addListener(contextMenuClickHandler);
 
+
+ //
+ // Handle a menu click
+ // 
 function contextMenuClickHandler(info, tab) {
 
   var actionToDo;
 
+  // find the menuAction item for the menu clicked
   for (var actionindex = 0; actionindex < menuActions.length; actionindex++) {
     if (menuActions[actionindex].id === info.menuItemId) {
       actionToDo = menuActions[actionindex];
       break;
     }
+  }
+
+  if(!actionToDo){
+    // could not find a menu action
+    return;
+  }
+
+  if(actionToDo.file===""){
+    // no file associated with action
+    return;
   }
 
   var errorHandler = function () {
@@ -69,22 +71,23 @@ function contextMenuClickHandler(info, tab) {
   }
 
 
+  // Execute the Action
   // cannot just execute script if the bot wants to access local variables
   // https://stackoverflow.com/questions/16784553/chrome-extension-throws-not-defined-on-defined-variable
-
   if (actionToDo.instant) {
     chrome.tabs.executeScript(null, { file: actionToDo.file }, errorHandler);
   } else {
-    // inject script and send a message to create script tag - not as good though
-    chrome.tabs.executeScript(tab.id, { file: 'js/contentscript.js' }, function () {
-      // do it
+      // inject execution script
+      chrome.tabs.executeScript(tab.id, { file: 'js/contentscript.js' }, function () {
+      // execute the snippet code by sending a message
       chrome.tabs.sendMessage(tab.id, { type: "execfile", filename: actionToDo.file });
-      // display it
-      getFileContents(actionToDo.file, errorHandler, sendFileContentsAsMessage);
-      getFileContents(actionToDo.file, errorHandler, sendFileContentsAsBookmarklet);
     });
   }
 
+  // Display the code for the action in the console
+  getFileContents(actionToDo.file, errorHandler, sendFileContentsAsMessage);
+  getFileContents(actionToDo.file, errorHandler, sendFileContentsAsBookmarklet);
+  
 
   // read a file https://stackoverflow.com/questions/28858027/how-to-read-file-from-chrome-extension
   function getFileContents(filename, errorHandler, callback) {
