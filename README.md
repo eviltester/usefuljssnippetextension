@@ -16,11 +16,19 @@ And are also small enough that the provide useful examples of using JavaScript f
 - use the context menu on various sites
 - check the console to see the bot code and the code as a bookmarklet
 
-## Initially:
+## Contributors
 
-- 20190320
-    - Alan Richardson created the basic framework for the Chrome Extension.
-    - Viv Richards contributed the initial JavaScript snippets.
+See commit history for the authorship of the onging snippets.
+
+- [Alan Richardson](https://github.com/eviltester) created the basic framework for the Chrome Extension.
+    - [eviltester.com](https://eviltester.com)
+    - [@eviltester](https://twitter.com/eviltester)
+    - [linkedin.com/in/eviltester](https://www.linkedin.com/in/eviltester)
+- [Viv Richards](https://github.com/vivrichards600) contributed the first JavaScript snippets to this extension: visualise tab flow, remove inputs, remove images, remove max length, remove required.
+    - [vivrichards.co.uk](http://vivrichards.co.uk/)
+    - [@11vlr](https://twitter.com/11vlr)
+    - [linkedin.com/in/vivrichards/](https://www.linkedin.com/in/vivrichards/)
+
 
 ## TODO
 
