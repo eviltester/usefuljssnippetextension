@@ -17,6 +17,9 @@ And are also small enough that the provide useful examples of using JavaScript f
 - Navigate to a website and then right click it to access the `Web Page` context menu
 - After executing a snippet you can see the bot code and get the code as a bookmarklet by viewing the DevTools console 
 
+![how to install extension](https://github.com/eviltester/usefuljssnippetextension/blob/master/Images/HowToInstall.gif)
+
+
 ## Contributors
 
 See commit history for the authorship of the onging snippets.
@@ -29,9 +32,6 @@ See commit history for the authorship of the onging snippets.
     - [vivrichards.co.uk](http://vivrichards.co.uk/)
     - [@11vlr](https://twitter.com/11vlr)
     - [linkedin.com/in/vivrichards](https://www.linkedin.com/in/vivrichards)
-
-    ![how to install extension](https://github.com/eviltester/usefuljssnippetextension/blob/master/Images/HowToInstall.gif)
-
 
 
 ## TODO
