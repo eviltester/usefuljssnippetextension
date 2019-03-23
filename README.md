@@ -19,12 +19,25 @@ And are also small enough that the provide useful examples of using JavaScript f
 
 ![how to install extension](https://github.com/eviltester/usefuljssnippetextension/blob/master/Images/HowToInstall.gif)
 
+## Current Snippets
+Below is a list of snippets currently available with this extension. Have an idea? Want to contribute? Please feel free to fork this repository, add snippets and then create a pull request.
+
+### Accessibility
+* Remove images which do not have alt tags
+* Remove inputs which do not have matching `for` labels
+* Remove page style sheets
+* Visualise page tab flow
+
+### Validation (Client side)
+* Remove max length attributes from fields
+* Remove require field attributes from fields
+* Remove paste restrictions from fields
 
 ## Contributors
 
 See commit history for the authorship of the onging snippets.
 
-- [Alan Richardson](https://github.com/eviltester) created the basic framework for the Chrome Extension.
+- [Alan Richardson](https://github.com/eviltester) created the basic framework for the Chrome Extension as well as the remove paste restriction snippet.
     - [eviltester.com](https://eviltester.com)
     - [@eviltester](https://twitter.com/eviltester)
     - [linkedin.com/in/eviltester](https://www.linkedin.com/in/eviltester)
