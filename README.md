@@ -30,7 +30,7 @@ Below is a list of snippets currently available with this extension. Have an ide
 
 ### Validation (Client side)
 * Remove max length attributes from fields
-* Remove require field attributes from fields
+* Remove required field attributes from fields
 * Remove paste restrictions from fields
 
 ## Contributors
