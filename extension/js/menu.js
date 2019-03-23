@@ -6,6 +6,7 @@ var menuActions = [
     { menu: "", "title": "Web Page", menuref: "W", file: ""},
         { menu: "W", "title": "Accessibility", menuref: "W>A", file: ""},    
             { menu: "W>A", "title": "Remove Images Without Alt Tags", file: "js/web/accessibility/removeImagesWithoutAltTags.js", instant: false },
+            { menu: "W>A", "title": "Show Images Without Alt Tags", file: "js/web/accessibility/highlightImagesWithoutAltTags.js", instant: false },            
             { menu: "W>A", "title": "Remove Inputs Without Labels", file: "js/web/accessibility/removeInputsWithoutLabel.js", instant: false },
             { menu: "W>A", "title": "Remove Style Sheets", file: "js/web/accessibility/removeStyleSheets.js", instant: false },
             { menu: "W>A", "title": "Visualise Tab Flow", file: "js/web/accessibility/visualiseTabFlow.js", instant: false },
