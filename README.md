@@ -30,7 +30,7 @@ See commit history for the authorship of the onging snippets.
     - [@11vlr](https://twitter.com/11vlr)
     - [linkedin.com/in/vivrichards](https://www.linkedin.com/in/vivrichards)
 
-    ![how to install extension](https://github.com/eviltester/usefuljssnippetextension/raw/master/usefuljssnippetextension/Images/HowToInstall.gif)
+    ![how to install extension](https://github.com/eviltester/usefuljssnippetextension/blob/master/Images/HowToInstall.gif)
 
 
 
