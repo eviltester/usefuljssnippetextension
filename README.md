@@ -13,9 +13,9 @@ And are also small enough that the provide useful examples of using JavaScript f
 - Download and extract this repository somewhere
 - Navigate to `chrome://extensions` within Chrome
 - Ensure to switch 'Developer mode' on (a toggle at the top right of the page)
-- Select 'Load unpacked' add then navigate to the  `/extension` folder
-- Navigate to a website and right click to access the context menu
-- After executing a snippet, view the console to see the bot code and the code as a bookmarklet
+- Select 'Load unpacked' and then navigate to the  `/extension` folder
+- Navigate to a website and then right click it to access the `Web Page` context menu
+- After executing a snippet you can see the bot code and get the code as a bookmarklet by viewing the DevTools console 
 
 ## Contributors
 
@@ -25,7 +25,7 @@ See commit history for the authorship of the onging snippets.
     - [eviltester.com](https://eviltester.com)
     - [@eviltester](https://twitter.com/eviltester)
     - [linkedin.com/in/eviltester](https://www.linkedin.com/in/eviltester)
-- [Viv Richards](https://github.com/vivrichards600) contributed the first JavaScript snippets to this extension: visualise tab flow, remove inputs, remove images, remove max length, remove required.
+- [Viv Richards](https://github.com/vivrichards600) contributed the first JavaScript snippets to this extension: visualise tab flow, remove inputs, remove images, remove max length, remove required, remove style sheets.
     - [vivrichards.co.uk](http://vivrichards.co.uk/)
     - [@11vlr](https://twitter.com/11vlr)
     - [linkedin.com/in/vivrichards](https://www.linkedin.com/in/vivrichards)
