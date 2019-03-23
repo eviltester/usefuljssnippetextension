@@ -10,11 +10,12 @@ And are also small enough that the provide useful examples of using JavaScript f
 
 ## Basic Install Instructions
 
-- download the repo somewhere
-- `chrome://extensions`
-- add the `/extension` folder via 'load unpacked'
-- use the context menu on various sites
-- check the console to see the bot code and the code as a bookmarklet
+- Download and extract this repository somewhere
+- Navigate to `chrome://extensions` within Chrome
+- Ensure to switch 'Developer mode' on (a toggle at the top right of the page)
+- Select 'Load unpacked' add then navigate to the  `/extension` folder
+- Navigate to a website and right click to access the context menu
+- After executing a snippet, view the console to see the bot code and the code as a bookmarklet
 
 ## Contributors
 
