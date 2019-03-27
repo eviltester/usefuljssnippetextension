@@ -1,4 +1,1 @@
-let inputs = document.querySelectorAll('input');
-for (let i = 0; i < inputs.length; i++) {
-    inputs[i].removeAttribute('maxLength');
-}
+Array.prototype.slice.call (document.querySelectorAll('input')).map(function(el){el.removeAttribute('maxLength')});

@@ -1,4 +1,1 @@
-let elements = document.querySelectorAll("input, select");
-for (let i = 0; i < elements.length; i++) {
-	elements[i].removeAttribute("required");
-}
+Array.prototype.slice.call (document.querySelectorAll('input, select')).map(function(el){el.removeAttribute('required')});
