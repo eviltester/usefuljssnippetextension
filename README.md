@@ -24,7 +24,9 @@ Below is a list of snippets currently available with this extension. Have an ide
 
 ### Accessibility
 * Remove images which do not have alt tags
+* Show images which do not have alt tags
 * Remove inputs which do not have matching `for` labels
+* Show inputs which do not have matching `for` labels
 * Remove page style sheets
 * Visualise page tab flow
 
@@ -37,11 +39,11 @@ Below is a list of snippets currently available with this extension. Have an ide
 
 See commit history for the authorship of the onging snippets.
 
-- [Alan Richardson](https://github.com/eviltester) created the basic framework for the Chrome Extension as well as the remove paste restriction snippet.
+- [Alan Richardson](https://github.com/eviltester) created the basic framework for the Chrome Extension as well as contributed the following JavaScript snippets: remove paste restriction, show images without alt tags.
     - [eviltester.com](https://eviltester.com)
     - [@eviltester](https://twitter.com/eviltester)
     - [linkedin.com/in/eviltester](https://www.linkedin.com/in/eviltester)
-- [Viv Richards](https://github.com/vivrichards600) contributed the first JavaScript snippets to this extension: visualise tab flow, remove inputs, remove images, remove max length, remove required, remove style sheets.
+- [Viv Richards](https://github.com/vivrichards600) contributed the following JavaScript snippets to this extension: visualise tab flow, remove inputs without labels, show inputs without labels, remove images without alt tags, remove max length from inputs, remove required from inputs, remove style sheets.
     - [vivrichards.co.uk](http://vivrichards.co.uk/)
     - [@11vlr](https://twitter.com/11vlr)
     - [linkedin.com/in/vivrichards](https://www.linkedin.com/in/vivrichards)
