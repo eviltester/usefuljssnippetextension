@@ -1,5 +1,1 @@
-let pageStyleSheets = document.styleSheets;
-for(let i=0; i<pageStyleSheets.length; i++)
-{
-	document.styleSheets[i].disabled = true;
-}
+Array.prototype.slice.call (document.styleSheets).map(function(el){el.disabled = true;});
