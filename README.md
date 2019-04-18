@@ -35,7 +35,7 @@ Below is a list of snippets currently available with this extension. Have an ide
 * Remove required field attributes from fields
 * Remove paste restrictions from fields
 
-### Layout
+### Styling
 * Check label text overflow
 * Check button text overflow
 * Check link text overflow
