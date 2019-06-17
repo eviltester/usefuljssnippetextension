@@ -21,4 +21,8 @@ var menuActions = [
             { menu: "W>S", "title": "Check link text overflow", file: "js/web/styling/increaseLinksText.js", instant: false },
             { menu: "W>S", "title": "Check page text overflow", file: "js/web/styling/increasePagesText.js", instant: false },
             { menu: "W>S", "title": "Check all elements text overflow", file: "js/web/styling/increaseAllElementsText.js", instant: false },
+        { menu: "W", "title": "Utilities", menuref: "W>U", file: ""},
+            { menu: "W>U", "title": "Document Edit Mode On", file: "js/web/utilities/documentDesignModeOn.js", instant: false },
+            { menu: "W>U", "title": "Document Edit Mode Off", file: "js/web/utilities/documentDesignModeOff.js", instant: false },
+            { menu: "W>U", "title": "Pretty Print JSON String", file: "js/web/utilities/prettyPrintJsonToConsole.js", instant: false },
 ];

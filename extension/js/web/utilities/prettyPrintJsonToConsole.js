@@ -1,0 +1,1 @@
+console.log(JSON.stringify(JSON.parse(prompt("Enter JSON TO Pretty Print To Console","")), null, 2));
