@@ -1,4 +1,4 @@
-# Useful Snippets Extension
+# ![extension icon](https://github.com/eviltester/usefuljssnippetextension/blob/master/extension/icon48.png) Useful Snippets Extension
 
 A Chrome Extension with Useful JavaScript snippets for testing.
 
@@ -30,6 +30,10 @@ Below is a list of snippets currently available with this extension. Have an ide
 * Remove page style sheets
 * Visualise page tab flow
 
+### Exploits
+* Insert JS Script Injection in all inputs
+* Insert SQL Injection in all inputs
+
 ### Styling
 * Check label text overflow
 * Check button text overflow
@@ -46,6 +50,7 @@ Below is a list of snippets currently available with this extension. Have an ide
 * Remove max length attributes from fields
 * Remove required field attributes from fields
 * Remove paste restrictions from fields
+* Change all inputs types to text
 
 ## Contributors
 

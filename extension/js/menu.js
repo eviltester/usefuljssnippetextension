@@ -11,6 +11,9 @@ var menuActions = [
             { menu: "W>A", "title": "Show Inputs Without Labels", file: "js/web/accessibility/highlightInputsWithoutLabel.js", instant: false },
             { menu: "W>A", "title": "Remove Style Sheets", file: "js/web/accessibility/removeStyleSheets.js", instant: false },
             { menu: "W>A", "title": "Visualise Tab Flow", file: "js/web/accessibility/visualiseTabFlow.js", instant: false },
+        { menu: "W", "title": "Exploits", menuref: "W>E", file: ""},    
+            { menu: "W>E", "title": "Insert JS Script Injection in all inputs", file: "js/web/exploits/xss.js", instant: false },
+            { menu: "W>E", "title": "Insert SQL Injection in all inputs", file: "js/web/exploits/sql.js", instant: false },
         { menu: "W", "title": "Styling", menuref: "W>S", file: ""},
             { menu: "W>S", "title": "Check label text overflow", file: "js/web/styling/increaseLabelsText.js", instant: false },
             { menu: "W>S", "title": "Check button text overflow", file: "js/web/styling/increaseButtonsText.js", instant: false },
@@ -25,4 +28,5 @@ var menuActions = [
             { menu: "W>V", "title": "Remove Max Length Attributes", file: "js/web/validation/removeMaxLength.js", instant: false },
             { menu: "W>V", "title": "Remove Required Field Attributes", file: "js/web/validation/removeRequired.js", instant: false },
             { menu: "W>V", "title": "Remove Paste Restrictions", file: "js/web/validation/removePasteRestrictions.js", instant: false },
+            { menu: "W>V", "title": "Change all input types to text", file: "js/web/validation/changeInputTypesToText.js", instant: false },
 ];
