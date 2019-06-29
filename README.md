@@ -30,11 +30,6 @@ Below is a list of snippets currently available with this extension. Have an ide
 * Remove page style sheets
 * Visualise page tab flow
 
-### Validation (Client side)
-* Remove max length attributes from fields
-* Remove required field attributes from fields
-* Remove paste restrictions from fields
-
 ### Styling
 * Check label text overflow
 * Check button text overflow
@@ -46,6 +41,11 @@ Below is a list of snippets currently available with this extension. Have an ide
 * Switch document edit mode on
 * Switch document edit mode off
 * Pretty print a JSON string 
+
+### Validation (Client side)
+* Remove max length attributes from fields
+* Remove required field attributes from fields
+* Remove paste restrictions from fields
 
 ## Contributors
 
