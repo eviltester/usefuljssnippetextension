@@ -39,7 +39,7 @@ Below is a list of snippets currently available with this extension. Have an ide
 * Check button text overflow
 * Check link text overflow
 * Check page text overflow
-* Check all elements text 
+* Check all elements text overflow
 
 ### Utilities
 * Switch document edit mode on
