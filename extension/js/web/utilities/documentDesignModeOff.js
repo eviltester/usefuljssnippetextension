@@ -1,1 +1,1 @@
-document.designMode="on";
+document.designMode="off";
