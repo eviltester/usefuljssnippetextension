@@ -14,7 +14,7 @@ The snippets should also be small enough that they provide useful examples of us
 - Navigate to `chrome://extensions` within Chrome
 - Ensure to switch 'Developer mode' on (a toggle at the top right of the page)
 - Select 'Load unpacked' and then navigate to the  `/extension` folder
-- Navigate to a website and then right click it to access the `Web Page` context menu
+- Navigate to a website and then right click it to access the `Useful Snippets` context menu
 - After executing a snippet you can see the bot code and get the code as a bookmarklet by viewing the DevTools console 
 
 ![how to install extension](https://github.com/eviltester/usefuljssnippetextension/blob/master/Images/HowToInstall.gif)
