@@ -59,9 +59,3 @@ See commit history for the authorship of the onging snippets.
     - [vivrichards.co.uk](http://vivrichards.co.uk/)
     - [@11vlr](https://twitter.com/11vlr)
     - [linkedin.com/in/vivrichards](https://www.linkedin.com/in/vivrichards)
-
-
-## TODO
-
-- add an icon
-- add more snippets
