@@ -51,6 +51,8 @@ Below is a list of snippets currently available with this extension. Have an ide
     * will prompt twice, first for a CSS selector, next for some javascript to execute against the _element_ variable.
     * e.g. "p" and then "console.log(element.innerText)" would write out the text of all paragraphs to the console
     * e.g. "[role='checkbox']" and then "element.click()" would toggle all checkboxes
+* Link Checker
+    * A simple link checker - all CORS and mixed content errors are displayed in console, console.table used for report output
 
 ### Validation (Client side)
 * Remove max length attributes from fields

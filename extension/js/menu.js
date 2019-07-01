@@ -27,6 +27,7 @@ var menuActions = [
             { menu: "W>U", "title": "Decode Base64 to console", file: "js/web/utilities/decodeBase64ToConsole.js", instant: false },
             { menu: "W>U", "title": "Encode String as Base64 to console", file: "js/web/utilities/encodeBase64ToConsole.js", instant: false },
             { menu: "W>U", "title": "For Every _element_ Do _this_", file: "js/web/utilities/forEveryDoThis.js", instant: false },
+            { menu: "W>U", "title": "Link Checker", file: "js/web/utilities/linkchecker.js", instant: false },
         { menu: "W", "title": "Validation", menuref: "W>V", file: ""},
             { menu: "W>V", "title": "Remove Max Length Attributes", file: "js/web/validation/removeMaxLength.js", instant: false },
             { menu: "W>V", "title": "Remove Required Field Attributes", file: "js/web/validation/removeRequired.js", instant: false },
