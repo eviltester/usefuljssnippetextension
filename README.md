@@ -47,6 +47,10 @@ Below is a list of snippets currently available with this extension. Have an ide
 * Pretty print a JSON string
 * Encode a string as Base64
 * Decode a Base64 string
+* For Every _element_ Do _this_
+    * will prompt twice, first for a CSS selector, next for some javascript to execute against the _element_ variable.
+    * e.g. "p" and then "console.log(element.innerText)" would write out the text of all paragraphs to the console
+    * e.g. "[role='checkbox']" and then "element.click()" would toggle all checkboxes
 
 ### Validation (Client side)
 * Remove max length attributes from fields
