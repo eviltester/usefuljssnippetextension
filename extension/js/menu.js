@@ -24,6 +24,8 @@ var menuActions = [
             { menu: "W>U", "title": "Document Edit Mode On", file: "js/web/utilities/documentDesignModeOn.js", instant: false },
             { menu: "W>U", "title": "Document Edit Mode Off", file: "js/web/utilities/documentDesignModeOff.js", instant: false },
             { menu: "W>U", "title": "Pretty Print JSON String", file: "js/web/utilities/prettyPrintJsonToConsole.js", instant: false },
+            { menu: "W>U", "title": "Decode Base64 to console", file: "js/web/utilities/decodeBase64ToConsole.js", instant: false },
+            { menu: "W>U", "title": "Encode String as Base64 to console", file: "js/web/utilities/encodeBase64ToConsole.js", instant: false },
         { menu: "W", "title": "Validation", menuref: "W>V", file: ""},
             { menu: "W>V", "title": "Remove Max Length Attributes", file: "js/web/validation/removeMaxLength.js", instant: false },
             { menu: "W>V", "title": "Remove Required Field Attributes", file: "js/web/validation/removeRequired.js", instant: false },

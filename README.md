@@ -44,7 +44,9 @@ Below is a list of snippets currently available with this extension. Have an ide
 ### Utilities
 * Switch document edit mode on
 * Switch document edit mode off
-* Pretty print a JSON string 
+* Pretty print a JSON string
+* Encode a string as Base64
+* Decode a Base64 string
 
 ### Validation (Client side)
 * Remove max length attributes from fields
