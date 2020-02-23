@@ -27,7 +27,8 @@ Below is a list of snippets currently available with this extension. Have an ide
 * Show images which do not have alt tags
 * Remove inputs which do not have matching `for` labels
 * Show inputs which do not have matching `for` labels
-* Show elements with the duplicate `id`'s
+* Remove elements with duplicate `id`'s
+* Show elements with duplicate `id`'s
 * Remove page style sheets
 * Visualise page tab flow
 
