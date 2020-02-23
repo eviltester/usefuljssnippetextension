@@ -63,7 +63,7 @@ Below is a list of snippets currently available with this extension. Have an ide
 
 ## Contributors
 
-See commit history for the authorship of the onging snippets.
+See commit history for the authorship of the ongoing snippets.
 
 - [Alan Richardson](https://github.com/eviltester) created the basic framework for the Chrome Extension and contributed JavaScript snippets to this extension.
     - [eviltester.com](https://eviltester.com)
