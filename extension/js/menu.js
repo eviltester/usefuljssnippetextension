@@ -9,6 +9,7 @@ var menuActions = [
             { menu: "W>A", "title": "Show Images Without Alt Tags", file: "js/web/accessibility/highlightImagesWithoutAltTags.js", instant: false },            
             { menu: "W>A", "title": "Remove Inputs Without Labels", file: "js/web/accessibility/removeInputsWithoutLabel.js", instant: false },            
             { menu: "W>A", "title": "Show Inputs Without Labels", file: "js/web/accessibility/highlightInputsWithoutLabel.js", instant: false },
+            { menu: "W>A", "title": "Show Elements With Duplicate Ids", file: "js/web/accessibility/highlightElementsWithTheSameId.js", instant: false },
             { menu: "W>A", "title": "Remove Style Sheets", file: "js/web/accessibility/removeStyleSheets.js", instant: false },
             { menu: "W>A", "title": "Visualise Tab Flow", file: "js/web/accessibility/visualiseTabFlow.js", instant: false },
         { menu: "W", "title": "Exploits", menuref: "W>E", file: ""},    
